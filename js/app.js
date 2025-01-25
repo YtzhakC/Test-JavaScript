@@ -174,3 +174,5 @@ window.addEventListener('load', () => {
         fetchTasks();
     }
 });
+
+// Examen finalizado: Ytzhak Carvajal

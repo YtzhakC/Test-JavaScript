@@ -18,3 +18,5 @@ document.getElementById('registro-form').addEventListener('submit', async (e) =>
     }
     location.href = 'login.html';
 });
+
+// Examen finalizado: Ytzhak Carvajal

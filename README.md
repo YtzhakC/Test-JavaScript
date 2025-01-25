@@ -57,3 +57,6 @@ La agencia de eventos "Momentum" requiere una aplicación web que permita gestio
 ├── registro.html           # Página de registro de usuario
 ├── login.html              # Página de inicio de sesión
 └── README.md               # Documentación del proyecto
+
+
+Examen finalizado - Ytzhak Carvajal B)
