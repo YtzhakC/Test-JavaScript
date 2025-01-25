@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero Kanban</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-buttons" id="auth-buttons">
+            <button class="boton" onclick="location.href='login.html'">Iniciar Sesión</button>
+            <button class="boton" onclick="location.href='register.html'">Registro</button>
+        </div>
+        <h1>Tablero Kanban</h1>
+        <form id="task-form">
+            <input type="text" id="task-title" placeholder="Título de la tarea" required>
+            <textarea id="task-desc" placeholder="Descripción de la tarea" required></textarea>
+            <input type="file" id="task-image" accept="image/*">
+            <input type="date" id="start-date" required>
+            <input type="date" id="end-date" required>
+            <select id="task-status">
+                <option value="pending">Pendientes</option>
+                <option value="in-progress">En progreso</option>
+                <option value="completed">Completadas</option>
+            </select>
+            <button type="submit" class="boton">Agregar/Editar Tarea</button>
+        </form>
+        <div class="kanban-board">
+            <div class="column" id="pending" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Pendientes</h2>
+                <div class="task-list"></div>
+            </div>
+            <div class="column" id="in-progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>En progreso</h2>
+                <div class="task-list"></div>
+            </div>
+            <div class="column" id="completed" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Completadas</h2>
+                <div class="task-list"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
