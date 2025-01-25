@@ -13,7 +13,7 @@ document.getElementById('login-form').addEventListener('submit', async function(
 
         if (user) {
             localStorage.setItem('user', JSON.stringify(user));
-            const redirectUrl = localStorage.getItem('redirectAfterLogin') || 'index.html';
+            const redirectUrl = localStorage.getItem('index.html') ;
             window.location.href = redirectUrl;
         } else {
             errorMessage.textContent = 'Credenciales incorrectas';
